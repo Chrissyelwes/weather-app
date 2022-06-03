@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "../styles/ForecastSummaries.css";
 import ForecastSummary from "./ForecastSummary";
 
-function ForecastSummaries({ forecasts }) {
+function ForecastSummaries({ forecasts, onForecastSelect }) {
   return (
     <div className="forecast-summaries">
       {forecasts.map((forecast) => (
@@ -12,6 +12,7 @@ function ForecastSummaries({ forecasts }) {
           date={forecast.date}
           description={forecast.description}
           icon={forecast.icon}
+          onSelect={onForecastSelect}
           temperature={forecast.temperature}
         />
       ))}
@@ -33,4 +34,5 @@ ForecastSummaries.propTypes = {
       }),
     })
   ).isRequired,
+  onForecastSelect: PropTypes.func.isRequired,
 };
