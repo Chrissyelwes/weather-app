@@ -25,8 +25,9 @@ export default ForecastDetails;
 
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({
-    date: PropTypes.number.isRequired,
-    humidity: PropTypes.number.isRequired,
+    date: PropTypes.number,
+    icon: PropTypes.string,
+    humidity: PropTypes.number,
     temperature: PropTypes.shape({
       min: PropTypes.number,
       max: PropTypes.number,
@@ -34,6 +35,6 @@ ForecastDetails.propTypes = {
     wind: PropTypes.shape({
       speed: PropTypes.number,
       direction: PropTypes.string,
-    }).isRequired,
+    }),
   }).isRequired,
 };

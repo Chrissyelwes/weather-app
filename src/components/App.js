@@ -27,10 +27,12 @@ function App({ forecasts, location }) {
   );
 }
 
+export default App;
+
 App.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
-      date: PropTypes.number,
+      date: PropTypes.string,
       description: PropTypes.string,
       icon: PropTypes.string,
       temperature: PropTypes.shape({
@@ -44,5 +46,3 @@ App.propTypes = {
     country: PropTypes.string,
   }).isRequired,
 };
-
-export default App;
