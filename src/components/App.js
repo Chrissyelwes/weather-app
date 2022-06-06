@@ -8,14 +8,18 @@ import ForecastDetails from "./ForecastDetails";
 function App({ forecasts, location }) {
   const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
   // eslint-disable-next-line prettier/prettier
-  const selectedForecast = forecasts.find(forecast => forecast.date === selectedDate);
+  const selectedForecast = forecasts.find((forecast) => forecast.date === selectedDate);
 
-  function handleForecastSelect(date) {
+  // function handleForecastSelect(date) {
+  //   setSelectedDate(date);
+  // }
+  const handleForecastSelect = (date) => {
     setSelectedDate(date);
-  }
+  };
 
   return (
     <div className="weather-app">
+      <h1>Weather App</h1>
       <LocationDetails city={location.city} country={location.country} />
       <ForecastSummaries
         forecasts={forecasts}
@@ -32,7 +36,7 @@ export default App;
 App.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
-      date: PropTypes.string,
+      date: PropTypes.number,
       description: PropTypes.string,
       icon: PropTypes.string,
       temperature: PropTypes.shape({
