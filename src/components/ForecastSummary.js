@@ -7,14 +7,12 @@ function ForecastSummary(props) {
   const formattedDate = new Date(date).toDateString();
 
   return (
-    <div className="forecast-summary">
+    <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary_date">{formattedDate}</div>
       <div className="forecast-summary_icon" data-testid="forecast-icon">
         <WeatherIcon name="owm" iconId={icon} />
       </div>
-      <div className="forecast-summary_temperature">
-        {temperature.max}&deg;c
-      </div>
+      <div className="forecast-summary_temperature">{temperature.max}˚C</div>
       <div className="forecast-summary_description">{description}</div>
       <button type="button" onClick={() => onSelect(date)}>
         More details

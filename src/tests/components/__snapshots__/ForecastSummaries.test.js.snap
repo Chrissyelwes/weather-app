@@ -7,6 +7,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
   >
     <div
       class="forecast-summary"
+      data-testid="forecast-summary"
     >
       <div
         class="forecast-summary_date"
@@ -17,10 +18,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary_icon"
         data-testid="forecast-icon"
       >
-        <i
-          class="wi wi-day-sunny"
-          name="owm"
-        />
+        800
       </div>
       <div
         class="forecast-summary_temperature"
@@ -40,6 +38,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
     </div>
     <div
       class="forecast-summary"
+      data-testid="forecast-summary"
     >
       <div
         class="forecast-summary_date"
@@ -50,15 +49,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary_icon"
         data-testid="forecast-icon"
       >
-        <i
-          class="wi wi-tornado"
-          name="owm"
-        />
+        211
       </div>
       <div
         class="forecast-summary_temperature"
       >
-        24°c
+        8°c
       </div>
       <div
         class="forecast-summary_description"
