@@ -18,12 +18,15 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary_icon"
         data-testid="forecast-icon"
       >
-        800
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary_temperature"
       >
-        22°c
+        22˚C
       </div>
       <div
         class="forecast-summary_description"
@@ -49,12 +52,15 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary_icon"
         data-testid="forecast-icon"
       >
-        211
+        <i
+          class="wi wi-day-thunderstorm"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary_temperature"
       >
-        8°c
+        8˚C
       </div>
       <div
         class="forecast-summary_description"
