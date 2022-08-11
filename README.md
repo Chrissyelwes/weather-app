@@ -20,6 +20,7 @@ From [Manchester Codes](https://www.manchestercodes.com/?utm_source=google&utm_m
 
 
 # ROADMAP
+* Responsive mobile UI
 * Create own visuals
 * Create animation according to temperature and weather
 

@@ -7,11 +7,16 @@ import getForecast from "../requests/getForecast";
 import SearchForm from "./SearchForm";
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const [forecasts, setForecasts] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
+  const [searchText, setSearchText] = useState("");
+
+  useEffect(() => {
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
@@ -20,17 +25,23 @@ function App() {
     setSelectedDate(date);
   };
 
-  useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
-  }, []);
+  const handleCitySearch = (event) => {
+    event.preventDefault();
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+  };
 
   return (
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
-      <SearchForm />
+
+      <SearchForm
+        searchText={searchText}
+        setSearchText={setSearchText}
+        onSubmit={handleCitySearch}
+      />
+
       <ForecastSummaries
         forecasts={forecasts}
-        // eslint-disable-next-line react/jsx-no-bind
         onForecastSelect={handleForecastSelect}
       />
       {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
