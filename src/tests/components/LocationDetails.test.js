@@ -5,9 +5,9 @@ import LocationDetails from "../../components/LocationDetails";
 describe("LocationDetails", () => {
   it("renders the correct city and location props", () => {
     const { getByText } = render(
-      <LocationDetails city="Limsa" country="Eorzea" />
+      <LocationDetails city="Manchester" country="GB" />
     );
 
-    expect(getByText("Limsa, Eorzea")).toBeInstanceOf(HTMLHeadingElement);
+    expect(getByText("Manchester, GB")).toBeInstanceOf(HTMLHeadingElement);
   });
 });
