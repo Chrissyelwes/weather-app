@@ -18,7 +18,8 @@ From [Manchester Codes](https://www.manchestercodes.com/?utm_source=google&utm_m
 
 # VISUALS
 ![Full Resolution](src/assets/Images/README_fullres.png)
-![Phone Resolution](src/assets/Images/README_phoneres.png)
+![Phone Resolution](src/assets/Images/README_phoneres.png =250px)
+<img src="src/assets/Images/README_phoneres.png" height="300" />
 
 
 # ROADMAP
