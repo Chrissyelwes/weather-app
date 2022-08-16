@@ -17,6 +17,8 @@ From [Manchester Codes](https://www.manchestercodes.com/?utm_source=google&utm_m
 * Error Handling
 
 # VISUALS
+![Full Resolution](src/assets/Images/README_fullres.png)
+![Phone Resolution](src/assets/Images/README_phoneres.png)
 
 
 # ROADMAP
