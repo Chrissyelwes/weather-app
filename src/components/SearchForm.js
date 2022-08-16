@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/SearchForm.css";
 
 function SearchForm({ searchText, setSearchText, onSubmit }) {
   const handleInputChange = (event) => setSearchText(event.target.value);
@@ -14,7 +15,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
         value={searchText}
       />
       <button
-        className="search-button"
+        className="search_button"
         type="submit"
         data-testid="button-text"
         onClick={onSubmit}

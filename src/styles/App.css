@@ -1,8 +1,74 @@
-App {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto&display=swap');
+
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
-    color: aqua;
+}
+
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*  Start of custom CSS */
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("/Users/cc/Projects/front-end/weather-app/src/assets/Images/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    color: #283442;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #6f6338;
+}
+
+h1 {
+    font-size: 3.8rem;
 }
 
 .weather-app {
-    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    margin: 6.25rem 1.25rem 0rem 1.25rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: scroll;
+    }
 }

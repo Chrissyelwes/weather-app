@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../styles/app.css";
 import React, { useEffect, useState } from "react";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
