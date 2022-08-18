@@ -16,13 +16,18 @@ From [Manchester Codes](https://www.manchestercodes.com/?utm_source=google&utm_m
 * Request/Response
 * Error Handling
 
+# PROJECT DETAILS
+To access the deployed version [Link to Deployed Version](https://chrissyelwes.github.io/weather-app/)
+If everything looks wonky, make sure to zoom out using your browser settings.
+
+Input any UK city in the search bar to find out the 5 weather forecast for that location.
+Clicking the "More details" button will show you more details for each city.
+
 # VISUALS
 ![Full Resolution](src/assets/Images/README_fullres.png)
 <img src="src/assets/Images/README_phoneres.png" height="500" />
+<img src="src/assets/Images/README_errormessage.png" height="500" />
 
-
-# ROADMAP
-* Create animation according to temperature and weather
 
 # PROJECT STATUS
 Finished!
