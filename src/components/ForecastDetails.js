@@ -9,15 +9,53 @@ function ForecastDetails({ forecast }) {
   return (
     <div className="forecast-details">
       <div className="forecast-details_date">{formattedDate}</div>
-      <div className="forecast-details_temperature-min">
-        {temperature.min}&deg;c
+      <div className="forecast-details_container">
+        <table className="forecast-details_table">
+          <tr>
+            <th>
+              <p>Min</p>
+            </th>
+            <th>
+              <p>Max</p>
+            </th>
+            <th>
+              <p>Humidity</p>
+            </th>
+            <th>
+              <p>Speed</p>
+            </th>
+            <th>
+              <p>Direction</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div className="forecast-details_temperature-min">
+                {temperature.min}&deg;c
+              </div>
+            </td>
+            <td>
+              {" "}
+              <div className="forecast-details_temperature-max">
+                {temperature.max}&deg;c
+              </div>
+            </td>
+            <td>
+              {" "}
+              <div className="forecast-details_humidity">{humidity}</div>
+            </td>
+            <td>
+              {" "}
+              <div className="forecast-details_wind-speed">{wind.speed}</div>
+            </td>
+            <td>
+              <div className="forecast-details_wind-direction">
+                {wind.direction}
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div className="forecast-details_temperature-max">
-        {temperature.max}&deg;c
-      </div>
-      <div className="forecast-details_humidity">{humidity}</div>
-      <div className="forecast-details_wind-speed">{wind.speed}</div>
-      <div className="forecast-details_wind-direction">{wind.direction}</div>
     </div>
   );
 }
