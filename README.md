@@ -16,8 +16,8 @@ From [Manchester Codes](https://www.manchestercodes.com/?utm_source=google&utm_m
 * Request/Response
 * Error Handling
 
-# PROJECT DETAILS
-To access the deployed version [Link to Deployed Version](https://chrissyelwes.github.io/weather-app/)
+# PROJECT DETAILS AND USAGE
+To access the deployed version: [Link to Deployed Version](https://chrissyelwes.github.io/weather-app/)
 If everything looks wonky, make sure to zoom out using your browser settings.
 
 Input any UK city in the search bar to find out the 5 weather forecast for that location.
