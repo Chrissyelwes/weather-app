@@ -28,6 +28,8 @@ Clicking the "More details" button will show you more details for each city.
 <img src="src/assets/Images/README_phoneres.png" height="500" />
 <img src="src/assets/Images/README_errormessage.png" height="500" />
 
+# PROJECT GOALS
+* Add own visuals
 
 # PROJECT STATUS
 Finished!
